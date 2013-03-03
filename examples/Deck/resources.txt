@@ -1,0 +1,9 @@
+3,red,red
+3,yellow,yellow
+3,blue,blue
+3,purple,purple
+3,green,green
+2,wild,orange
+1,attack the leader,white
+1,attack the healthiest,white
+1,attack the most resourceful,white
