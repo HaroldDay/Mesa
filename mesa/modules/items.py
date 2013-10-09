@@ -1,4 +1,4 @@
-from PySide import QtGui, QtCore
+from PyQt4 import QtGui, QtCore
 
 class MesaItem(QtGui.QGraphicsPixmapItem):
   ''' base class for all objects '''
@@ -16,11 +16,11 @@ class MesaItem(QtGui.QGraphicsPixmapItem):
     pass
 
 class Card(MesaItem):
-  def __init__(self, (front, back), *args, **kwargs):
+  def __init__(self, imgs, *args, **kwargs):
     super(Card, self).__init__(*args, **kwargs)
     self.face_up = False
-    self.frontPixmap = QtGui.QPixmap(front)
-    self.backPixmap = QtGui.QPixmap(back)
+    self.frontPixmap = QtGui.QPixmap(imgs[0])
+    self.backPixmap = QtGui.QPixmap(imgs[1])
     self.update()
     self.setZValue(10)
 

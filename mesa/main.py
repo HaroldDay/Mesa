@@ -1,8 +1,8 @@
 import random
-from PySide import QtGui, QtCore
+from PyQt4 import QtGui, QtCore
 
-from lib.items import *
-from lib.surfaces import *
+from modules.items import *
+from modules.surfaces import *
 
 SIZE = 200
 
@@ -166,6 +166,4 @@ def main():
   sys.exit(app.exec_())
 
 if __name__ == '__main__':
-  from tests import load_img_test as current_test
-
-  current_test.main()
+  main()

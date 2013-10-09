@@ -1,4 +1,4 @@
-from PySide import QtGui, QtCore
+from PyQt4 import QtGui, QtCore
 
 class Table(QtGui.QGraphicsScene):
   def __init__(self, itemMenu, parent=None):

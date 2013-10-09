@@ -1,5 +1,5 @@
 import inspect
-from PySide import QtGui, QtCore
+from PyQt4 import QtGui, QtCore
 
 import items
 
